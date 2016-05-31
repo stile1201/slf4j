@@ -151,6 +151,46 @@ final public class MessageFormatter {
         return arrayFormat(messagePattern, new Object[] { arg1, arg2 });
     }
 
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4, Object arg5) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4, arg5 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4, Object arg5, Object arg6) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4, Object arg5, Object arg6, Object arg7) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4, Object arg5, Object arg6, Object arg7, Object arg8,
+                                               Object arg9) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 });
+    }
+
+    final public static FormattingTuple format(final String messagePattern, Object arg1, Object arg2, Object arg3,
+                                               Object arg4, Object arg5, Object arg6, Object arg7, Object arg8,
+                                               Object arg9, Object arg10) {
+        return arrayFormat(messagePattern, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 });
+    }
 
     static final Throwable getThrowableCandidate(Object[] argArray) {
         if (argArray == null || argArray.length == 0) {

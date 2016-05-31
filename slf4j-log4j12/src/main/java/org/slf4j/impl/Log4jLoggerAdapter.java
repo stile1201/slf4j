@@ -158,6 +158,67 @@ public final class Log4jLoggerAdapter extends MarkerIgnoringBase implements Loca
         }
     }
 
+    public void trace(String format, Object arg1, Object arg2, Object arg3) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (isTraceEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9,
+                                                         arg10);
+            logger.log(FQCN, traceCapable ? Level.TRACE : Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
     /**
      * Log a message at level TRACE according to the specified format and
      * arguments.
@@ -254,6 +315,67 @@ public final class Log4jLoggerAdapter extends MarkerIgnoringBase implements Loca
         }
     }
 
+    public void debug(String format, Object arg1, Object arg2, Object arg3) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (isDebugEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9,
+                                                         arg10);
+            logger.log(FQCN, Level.DEBUG, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
     /**
      * Log a message at level DEBUG according to the specified format and
      * arguments.
@@ -344,6 +466,67 @@ public final class Log4jLoggerAdapter extends MarkerIgnoringBase implements Loca
     public void info(String format, Object arg1, Object arg2) {
         if (logger.isInfoEnabled()) {
             FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (isInfoEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9,
+                                                         arg10);
             logger.log(FQCN, Level.INFO, ft.getMessage(), ft.getThrowable());
         }
     }
@@ -445,6 +628,67 @@ public final class Log4jLoggerAdapter extends MarkerIgnoringBase implements Loca
         }
     }
 
+    public void warn(String format, Object arg1, Object arg2, Object arg3) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (isWarnEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9,
+                                                         arg10);
+            logger.log(FQCN, Level.WARN, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
     /**
      * Log a message at level WARN according to the specified format and
      * arguments.
@@ -538,6 +782,67 @@ public final class Log4jLoggerAdapter extends MarkerIgnoringBase implements Loca
     public void error(String format, Object arg1, Object arg2) {
         if (logger.isEnabledFor(Level.ERROR)) {
             FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (isErrorEnabled()) {
+            FormattingTuple ft = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9,
+                                                         arg10);
             logger.log(FQCN, Level.ERROR, ft.getMessage(), ft.getThrowable());
         }
     }

@@ -305,6 +305,326 @@ public class SubstituteLogger implements Logger {
         delegate().error(marker, msg, t);
     }
 
+    public void trace(String format, Object arg1, Object arg2, Object arg3) {
+        delegate().trace(format, arg1, arg2, arg3);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().trace(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().trace(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().trace(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3) {
+        delegate().debug(format, arg1, arg2, arg3);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().debug(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().debug(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().debug(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3) {
+        delegate().info(format, arg1, arg2, arg3);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().info(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().info(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().info(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3) {
+        delegate().warn(format, arg1, arg2, arg3);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().warn(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().warn(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().warn(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3) {
+        delegate().error(format, arg1, arg2, arg3);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().error(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().error(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().error(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        delegate().trace(marker, format, arg1, arg2, arg3);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        delegate().debug(marker, format, arg1, arg2, arg3);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        delegate().info(marker, format, arg1, arg2, arg3);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        delegate().warn(marker, format, arg1, arg2, arg3);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        delegate().error(marker, format, arg1, arg2, arg3);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        delegate().error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o)

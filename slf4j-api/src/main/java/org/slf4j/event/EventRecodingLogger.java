@@ -57,6 +57,42 @@ public class EventRecodingLogger implements Logger {
         recordEvent(Level.TRACE, format, new Object[] { arg1, arg2 }, null);
     }
 
+    public void trace(String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.TRACE, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+    }
+
     public void trace(String format, Object... arguments) {
         recordEvent(Level.TRACE, format, arguments, null);
     }
@@ -80,6 +116,42 @@ public class EventRecodingLogger implements Logger {
 
     public void trace(Marker marker, String format, Object arg1, Object arg2) {
         recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.TRACE, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
     }
 
     public void trace(Marker marker, String format, Object... argArray) {
@@ -109,6 +181,42 @@ public class EventRecodingLogger implements Logger {
 
     }
 
+    public void debug(String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.DEBUG, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+    }
+
     public void debug(String format, Object... arguments) {
         recordEvent(Level.DEBUG, format, arguments, null);
     }
@@ -131,6 +239,42 @@ public class EventRecodingLogger implements Logger {
 
     public void debug(Marker marker, String format, Object arg1, Object arg2) {
         recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.DEBUG, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
     }
 
     public void debug(Marker marker, String format, Object... arguments) {
@@ -157,6 +301,42 @@ public class EventRecodingLogger implements Logger {
         recordEvent(Level.INFO, format, new Object[] { arg1, arg2 }, null);
     }
 
+    public void info(String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.INFO, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+    }
+
     public void info(String format, Object... arguments) {
         recordEvent(Level.INFO, format, arguments, null);
     }
@@ -179,6 +359,42 @@ public class EventRecodingLogger implements Logger {
 
     public void info(Marker marker, String format, Object arg1, Object arg2) {
         recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.INFO, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
     }
 
     public void info(Marker marker, String format, Object... arguments) {
@@ -207,6 +423,42 @@ public class EventRecodingLogger implements Logger {
         recordEvent(Level.WARN, format, new Object[] { arg1, arg2 }, null);
     }
 
+    public void warn(String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.WARN, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+    }
+
     public void warn(String format, Object... arguments) {
         recordEvent(Level.WARN, format, arguments, null);
     }
@@ -230,6 +482,42 @@ public class EventRecodingLogger implements Logger {
     public void warn(Marker marker, String format, Object arg1, Object arg2) {
         recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2 }, null);
 
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.WARN, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
     }
 
     public void warn(Marker marker, String format, Object... arguments) {
@@ -258,6 +546,42 @@ public class EventRecodingLogger implements Logger {
 
     }
 
+    public void error(String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.ERROR, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+    }
+
     public void error(String format, Object... arguments) {
         recordEvent(Level.ERROR, format, arguments, null);
 
@@ -283,6 +607,42 @@ public class EventRecodingLogger implements Logger {
 
     public void error(Marker marker, String format, Object arg1, Object arg2) {
         recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        recordEvent(Level.ERROR, marker, format, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
     }
 
     public void error(Marker marker, String format, Object... arguments) {

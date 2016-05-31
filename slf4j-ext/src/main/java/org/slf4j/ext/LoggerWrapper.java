@@ -120,6 +120,106 @@ public class LoggerWrapper implements Logger {
         }
     }
 
+    public void trace(String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isTraceEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+    }
+
     /**
      * Delegate to the appropriate method of the underlying logger.
      */
@@ -187,6 +287,99 @@ public class LoggerWrapper implements Logger {
             ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2 }, null);
         } else {
             logger.trace(marker, format, arg1, arg2);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isTraceEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.TRACE_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.trace(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
     }
 
@@ -275,6 +468,106 @@ public class LoggerWrapper implements Logger {
         }
     }
 
+    public void debug(String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isDebugEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+    }
+
     /**
      * Delegate to the appropriate method of the underlying logger.
      */
@@ -342,6 +635,99 @@ public class LoggerWrapper implements Logger {
             ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2 }, null);
         } else {
             logger.debug(marker, format, arg1, arg2);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isDebugEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.DEBUG_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.debug(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
     }
 
@@ -431,6 +817,106 @@ public class LoggerWrapper implements Logger {
         }
     }
 
+    public void info(String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isInfoEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+    }
+
     /**
      * Delegate to the appropriate method of the underlying logger.
      */
@@ -498,6 +984,99 @@ public class LoggerWrapper implements Logger {
             ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2 }, null);
         } else {
             logger.info(marker, format, arg1, arg2);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isInfoEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.INFO_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.info(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
     }
 
@@ -583,6 +1162,106 @@ public class LoggerWrapper implements Logger {
         }
     }
 
+    public void warn(String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isWarnEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+    }
+
     /**
      * Delegate to the appropriate method of the underlying logger.
      */
@@ -650,6 +1329,99 @@ public class LoggerWrapper implements Logger {
             ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2 }, null);
         } else {
             logger.warn(marker, format, arg1, arg2);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isWarnEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.WARN_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.warn(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
     }
 
@@ -738,6 +1510,106 @@ public class LoggerWrapper implements Logger {
         }
     }
 
+    public void error(String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isErrorEnabled())
+            return;
+
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(null, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+    }
+
     /**
      * Delegate to the appropriate method of the underlying logger.
      */
@@ -805,6 +1677,99 @@ public class LoggerWrapper implements Logger {
             ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2 }, null);
         } else {
             logger.error(marker, format, arg1, arg2);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4, arg5);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        if (!logger.isErrorEnabled(marker))
+            return;
+        if (instanceofLAL) {
+            String formattedMessage = MessageFormatter.format(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10).getMessage();
+            ((LocationAwareLogger) logger).log(marker, fqcn, LocationAwareLogger.ERROR_INT, formattedMessage, new Object[] { arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10 }, null);
+        } else {
+            logger.error(marker, format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
     }
 

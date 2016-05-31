@@ -55,6 +55,43 @@ public abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
         trace(format, arg1, arg2);
     }
 
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        trace(format, arg1, arg2, arg3);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        trace(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        trace(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        trace(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        trace(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
     public void trace(Marker marker, String format, Object... arguments) {
         trace(format, arguments);
     }
@@ -79,6 +116,43 @@ public abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
         debug(format, arg1, arg2);
     }
 
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        debug(format, arg1, arg2, arg3);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        debug(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        debug(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        debug(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        debug(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+    
     public void debug(Marker marker, String format, Object... arguments) {
         debug(format, arguments);
     }
@@ -101,6 +175,43 @@ public abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
 
     public void info(Marker marker, String format, Object arg1, Object arg2) {
         info(format, arg1, arg2);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        info(format, arg1, arg2, arg3);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        info(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        info(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        info(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        info(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
     }
 
     public void info(Marker marker, String format, Object... arguments) {
@@ -127,6 +238,43 @@ public abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
         warn(format, arg1, arg2);
     }
 
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        warn(format, arg1, arg2, arg3);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        warn(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        warn(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        warn(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        warn(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+    }
+
     public void warn(Marker marker, String format, Object... arguments) {
         warn(format, arguments);
     }
@@ -149,6 +297,43 @@ public abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
 
     public void error(Marker marker, String format, Object arg1, Object arg2) {
         error(format, arg1, arg2);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3) {
+        error(format, arg1, arg2, arg3);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4) {
+        error(format, arg1, arg2, arg3, arg4);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5) {
+        error(format, arg1, arg2, arg3, arg4, arg5);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6) {
+        error(format, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7) {
+        error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8) {
+        error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9) {
+        error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+    }
+
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5,
+                      Object arg6, Object arg7, Object arg8, Object arg9, Object arg10) {
+        error(format, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
     }
 
     public void error(Marker marker, String format, Object... arguments) {

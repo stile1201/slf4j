@@ -120,6 +120,19 @@ public interface Logger {
      */
     public void trace(String format, Object arg1, Object arg2);
 
+    public void trace(String format, Object arg1, Object arg2, Object arg3);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void trace(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
+
     /**
      * Log a message at the TRACE level according to the specified format
      * and arguments.
@@ -191,6 +204,19 @@ public interface Logger {
      */
     public void trace(Marker marker, String format, Object arg1, Object arg2);
 
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void trace(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
+    
     /**
      * This method is similar to {@link #trace(String, Object...)}
      * method except that the marker data is also taken into
@@ -253,6 +279,19 @@ public interface Logger {
      * @param arg2   the second argument
      */
     public void debug(String format, Object arg1, Object arg2);
+
+    public void debug(String format, Object arg1, Object arg2, Object arg3);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void debug(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
 
     /**
      * Log a message at the DEBUG level according to the specified format
@@ -319,6 +358,19 @@ public interface Logger {
      */
     public void debug(Marker marker, String format, Object arg1, Object arg2);
 
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void debug(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
+
     /**
      * This method is similar to {@link #debug(String, Object...)}
      * method except that the marker data is also taken into
@@ -379,6 +431,19 @@ public interface Logger {
      * @param arg2   the second argument
      */
     public void info(String format, Object arg1, Object arg2);
+
+    public void info(String format, Object arg1, Object arg2, Object arg3);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void info(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
 
     /**
      * Log a message at the INFO level according to the specified format
@@ -444,6 +509,19 @@ public interface Logger {
      */
     public void info(Marker marker, String format, Object arg1, Object arg2);
 
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7, Object arg8);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7, Object arg8, Object arg9);
+    public void info(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7, Object arg8, Object arg9, Object arg10);
+    
     /**
      * This method is similar to {@link #info(String, Object...)}
      * method except that the marker data is also taken into
@@ -521,6 +599,19 @@ public interface Logger {
      */
     public void warn(String format, Object arg1, Object arg2);
 
+    public void warn(String format, Object arg1, Object arg2, Object arg3);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void warn(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
+
     /**
      * Log an exception (throwable) at the WARN level with an
      * accompanying message.
@@ -570,6 +661,19 @@ public interface Logger {
      */
     public void warn(Marker marker, String format, Object arg1, Object arg2);
 
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7, Object arg8);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7, Object arg8, Object arg9);
+    public void warn(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                     Object arg7, Object arg8, Object arg9, Object arg10);
+    
     /**
      * This method is similar to {@link #warn(String, Object...)}
      * method except that the marker data is also taken into
@@ -630,6 +734,19 @@ public interface Logger {
      * @param arg2   the second argument
      */
     public void error(String format, Object arg1, Object arg2);
+
+    public void error(String format, Object arg1, Object arg2, Object arg3);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void error(String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
 
     /**
      * Log a message at the ERROR level according to the specified format
@@ -696,6 +813,19 @@ public interface Logger {
      */
     public void error(Marker marker, String format, Object arg1, Object arg2);
 
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9);
+    public void error(Marker marker, String format, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5, Object arg6,
+                      Object arg7, Object arg8, Object arg9, Object arg10);
+    
     /**
      * This method is similar to {@link #error(String, Object...)}
      * method except that the marker data is also taken into
