@@ -4,7 +4,7 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.slf4j</groupId>
+  <groupId>uk.co.nichesolutions</groupId>
   <artifactId>slf4j-parent</artifactId>
   <version>1.7.22-CUSTOM-SNAPSHOT</version>
 
@@ -90,7 +90,7 @@
     <dependencies>
 
       <dependency>
-        <groupId>org.slf4j</groupId>
+        <groupId>uk.co.nichesolutions</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -416,10 +416,13 @@
     <repository>
       <!--<id>pixie</id>-->
       <!--<url>scp://pixie.qos.ch/var/mvnrepo/</url>-->
-      <id>sonatype-nexus-staging</id>
+      <id>sonatype-nexus</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
-
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 
 </project>
