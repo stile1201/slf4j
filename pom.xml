@@ -27,10 +27,12 @@
     </license>
   </licenses>
 
-  <scm>
-    <url>https://github.com/qos-ch/slf4j</url>
-    <connection>git@github.com:qos-ch/slf4j.git</connection>
-  </scm>  
+ <scm>
+    <url>https://github.com/stile1201/slf4j</url>
+    <connection>scm:git:git://github.com/stile1201/slf4j.git</connection>
+    <developerConnection>scm:git:git@github.com:stile1201/slf4j.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <required.jdk.version>1.5</required.jdk.version>
@@ -54,6 +56,12 @@
       <id>ceki</id>
       <name>Ceki Gulcu</name>
       <email>ceki@qos.ch</email>
+    </developer>
+    <developer>
+      <name>Nick Chadwick</name>
+      <roles>
+        <role>Developer - Custom Version</role>
+      </roles>
     </developer>
   </developers>
 
@@ -414,9 +422,7 @@
     </site>
 
     <repository>
-      <!--<id>pixie</id>-->
-      <!--<url>scp://pixie.qos.ch/var/mvnrepo/</url>-->
-      <id>sonatype-nexus</id>
+      <id>sonatype-nexus-releases</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
