@@ -4,7 +4,7 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>uk.co.nichesolutions</groupId>
+  <groupId>org.slf4j</groupId>
   <artifactId>slf4j-bom</artifactId>
   <version>1.7.22-CUSTOM-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -20,19 +20,19 @@
     <dependencies>
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>slf4j-jdk14</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -45,25 +45,25 @@
 
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>jcl-over-slf4j</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>log4j-over-slf4j</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>uk.co.nichesolutions</groupId>
+        <groupId>org.slf4j</groupId>
         <artifactId>slf4j-nop</artifactId>
         <version>${project.version}</version>
       </dependency>
