@@ -6,7 +6,7 @@
   <parent>
     <groupId>uk.co.nichesolutions</groupId>
     <artifactId>slf4j-parent</artifactId>
-    <version>1.7.22-CUSTOM</version>
+    <version>1.7.23-CUSTOM-SNAPSHOT</version>
   </parent>
 
   <artifactId>slf4j-log4j12</artifactId>
