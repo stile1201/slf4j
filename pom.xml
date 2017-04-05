@@ -436,11 +436,6 @@
   </pluginRepositories>
 
   <distributionManagement>
-    <site>
-      <id>tao</id>
-      <url>scp://tao.qos.ch/var/www/www.slf4j.org/htdocs/</url>
-    </site>
-
     <repository>
       <id>sonatype-nexus-releases</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
